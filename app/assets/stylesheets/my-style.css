@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+* {
+
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.my-pic {
+  width: 390px;
+}
+.alert-danger {
+  color:red;
+}
+
+hr {
+  width: 390px;
+}

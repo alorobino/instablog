@@ -1,0 +1,3 @@
+<%= image_tag @post.pic, class: "my-pic" %>
+<p><%= @post.caption %></p>
+<p>author: <%= link_to @post.user.email, "users/show" %></p>
