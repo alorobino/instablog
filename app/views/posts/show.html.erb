@@ -1,3 +1,9 @@
-<%= image_tag @post.pic, class: "my-pic" %>
-<p><%= @post.caption %></p>
-<p>author: <%= link_to @post.user.email, "users/show" %></p>
+<%= image_tag @post.pic.variant(auto_orient: true), class: "my-pic" %>
+<p class="caption"><%= @post.caption %></p>
+<p class="date">author: <%= link_to @post.user.email, @post.user %></p>
+<p class="date">created: <%= @post.created_at.strftime("%B %d %Y") %></p>
+<div class="content"><%= @post.content %></div>
+<% if current_user == @post.user %>
+<div class=btn><%= button_to "Delete", @post, method: :delete,data: {confirm: "Are you sure?"}%></div>
+<div class=btn><%= button_to "Update",edit_post_path, method: :get %></div>
+<%end%>

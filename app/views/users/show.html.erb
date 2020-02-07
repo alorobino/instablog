@@ -1,6 +1,8 @@
 
-<p><%= @user.email %></p>
+<p> profile : <%= @user.email %></p>
+
 <% @user.posts.each do |post| %>
-<%= image_tag post.pic, class: "my-pic" %>
+<%= link_to(image_tag(post.pic, class: "my-pic"), post) %>
 <p><%= post.caption %></p>
+
 <% end %>

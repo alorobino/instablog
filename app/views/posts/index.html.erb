@@ -1,13 +1,9 @@
-<p>FEED!</p>
+<p></p>
 <hr />
 <% @posts.each do |post| %>
-<%= image_tag post.pic, class: "my-pic" %>
-<p><%= post.caption %></p>
-<p>author: <%= link_to post.user.email, post.user %></p>
-<hr />
+  <%= link_to(image_tag(post.pic.variant(auto_orient: true), class: "my-pic"), post) %>
+  <p class="caption"><%= post.caption %></p>
+  <p class="date">author: <%= link_to post.user.email, post.user %></p>
+  <p class="date">created: <%= post.created_at.strftime("%B %d %Y") %></p>
+  <hr />
 <% end %>
-
-
-make a commit on your app
-put it on github
-making regular commits

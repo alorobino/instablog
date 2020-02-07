@@ -2,19 +2,46 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 
-* {
-
+body{
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  padding-top: 70px;
 }
 
 .my-pic {
-  width: 390px;
+    width: 400px;
+    margin: 20px;
 }
 .alert-danger {
   color:red;
 }
 
 hr {
-  width: 390px;
+  width: 400px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.margin-left {
+  margin-left: 20px;
+}
+
+.btn {
+  padding: 20px;
+}
+
+.caption {
+  font-weight: bold;
+}
+
+.content {
+  font-size: 80%;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+  text-align: left;
+}
+
+.date {
+  font-size: 60%;
 }

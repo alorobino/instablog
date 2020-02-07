@@ -1,0 +1,5 @@
+  image: <%= image_tag @post.pic.variant(auto_orient: true), class: "my-pic" %>
+  <%= form_with model: @post do |f| %>
+  <div>caption: <%= f.text_area :caption, required: true %></div>
+  <%= f.submit %>
+  <% end %>
